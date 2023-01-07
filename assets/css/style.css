@@ -1,0 +1,114 @@
+/* Nav bar */
+.navbar {
+  position: absolute;
+  background-color: black;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-brand {
+  padding-left: 2%;
+}
+
+#navbarNav {
+  padding-right: 2%;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background: url("../images/background-image.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h1,
+p {
+  color: white;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  padding-top: 10%;
+}
+
+.d-flex {
+  padding-top: 2%;
+}
+
+/* Memes section */
+#memes {
+  margin: 7%;
+}
+
+.memes-content {
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.memes-content p {
+  color: black;
+  font-size: 20px;
+}
+
+.memes-content h2 {
+  font-size: 45px;
+}
+
+/* Words section */
+#words {
+  padding: 5%;
+  background-color: black;
+}
+
+.words-content {
+  text-align: center;
+  padding-bottom: 4%;
+}
+
+.words-content p {
+  color: white;
+  font-size: 20px;
+}
+
+.words-content h2 {
+  font-size: 45px;
+  color: white;
+}
+
+.card-body p {
+  color: black;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 18rem;
+}
+#words h5 {
+font-weight: 700;
+padding-bottom: 5%;;
+}
+
+/* About Us Section */
+
+#about {
+  margin: 7%;
+  background-color: black;
+}
+
+#about img {
+  width: 50%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+}
