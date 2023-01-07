@@ -1,12 +1,12 @@
 /* Nav bar */
 .navbar {
   position: absolute;
-  background-color: black;
+  background-color: #fff;
   opacity: 0.9;
 }
 
 .navbar a {
-  color: white;
+  color: inherit;
 }
 
 .navbar-brand {
@@ -16,7 +16,6 @@
 #navbarNav {
   padding-right: 2%;
 }
-
 /* Jumbotron */
 
 .jumbotron {
@@ -33,12 +32,7 @@
 p {
   color: white;
   text-align: center;
-
-
- 
-  
 }
-
 
 .d-flex {
   padding-top: 2%;
@@ -153,9 +147,11 @@ footer {
 
 .socials {
   display: inline-flex;
+  justify-content: space-evenly;
 }
 
-.socials p {
+.socials a {
+  font-size: 30px;
   padding: 2%;
 }
 
@@ -168,9 +164,9 @@ footer {
 }
 
 .contact-us {
-    display: flex;
-   flex-direction: column;
-   text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 /* Results page */
@@ -221,7 +217,6 @@ footer {
     font-weight: 600;
     font-style: italic;
   }
-
 
   .results-meme p {
     color: white;
