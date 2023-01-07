@@ -8,6 +8,8 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- Font Awesome  -->
+<script src="https://kit.fontawesome.com/c2f543ac58.js" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -18,7 +20,7 @@
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg ">
        
-          <a class="navbar-brand" href="#">Urban Meme Dictionary</a>
+          <a class="navbar-brand" href="#jumbotron">Urban Meme Dictionary</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon burger-menu"></span>
           </button>
@@ -26,13 +28,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#jumbotron">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link contact-link" href="#">Contact Us</a>
+                <a class="nav-link contact-link" href="#footer">Contact Us</a>
               </li>              
             </ul>
           </div>
@@ -46,7 +48,7 @@
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> 
                        
         <form class="d-flex justify-content-center align-items-center container" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="add your unknown slang" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
       </div>
@@ -95,7 +97,7 @@
       <div class="col-lg-4 d-flex align-items-stretch">
 <div class="card" >    
     <div class="card-body">
-      <h5 class="card-title">couchbuster</h5>
+      <h5 class="card-title">Couchbuster</h5>
       <p class="card-text">A couchbuster is a contemporary spin on the “blockbuster”. <br>
       Describes grand, crowd pleasing films released for streaming services that one enjoys from the comfort of a couch instead of a theater.<br>
         I could see the new Netflix money pit in the theater for its limited theatrical run but I’m lazy and it will probably suck so I’ll just watch that couchbuster at home.</p>
@@ -132,16 +134,18 @@
 
 <section class="about" id="about">
 <div class="container-fluid">
-<div class="row">
+<div class="row image-col">
     
-    <div class="col-md-12 col-lg-4">
+    <div class="col-md-12 col-lg-4 image-col">
         <div class ="about-image">
             <img src="assets/images/about-us-image.jpg" alt="about us image">
     </div>
 </div>
-    <div class="col-md-12 col-lg-4">
+    <div class="col-md-12 col-lg-6 about-content">
 <h2>About Us</h2>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi illum quisquam, fuga ducimus temporibus ea sunt assumenda aut repellat ipsam, quasi omnis? Sit, eum reiciendis provident inventore tempora explicabo expedita.</p>
+<p>Welcome to the Urban Meme Dictionary! We are a team of meme enthusiasts who are dedicated to documenting and defining the latest and greatest memes from the urban community.  
+ <p>Our website is a one-stop for all things meme. Whether you're a seasoned memer or just looking to learn more about the latest trends, we've got you covered. Our team works tirelessly to keep our dictionary up-to-date with the latest and greatest memes, so you can stay current and be the coolest kid on the internet.</p> 
+ <p> So why wait? Start browsing our extensive library of memes today and become a master of internet culture!</p>
     </div>
 
 </div>
@@ -149,39 +153,27 @@
 </section>
 
 <!-- Footer -->
-<footer>
+<footer id="footer">
 <div class="container-fluid">
 
-    <!-- Follow us links -->
+  <!-- Follow us links -->
 <div class="row">
-<div class="col-md-12 col-lg-4">
-<p>facebook</p>
+<div class="col-md-6 col-lg-4 socials">
+  <p><i class="fa-brands fa-instagram"></i></p>
+  <p><i class="fa-brands fa-twitter"></i></p>
+  <p><i class="fa-brands fa-facebook"></i></p>
 </div>
-<div class="col-md-12 col-lg-4">
-    <p>twitter</p>
-</div>
-<div class="col-md-12 col-lg-4">
-    <p>instagram</p>
-</div>
-</div>
-
 <!-- Copyright -->
-<div class="row">
-    <div>
-        <p>Copyright</p>
-    </div>    
+<div class="col-md-6 col-lg-4 copyright">
+  <p class="slogan">Where the streets meet the internet</p>
+  <p>Copyright</p>
 </div>
-
 <!-- contact -->
-<div class="row">
-    <div class="col-md-12 col-lg-4">
-        <p>phone number</p>
-    </div>
-    <div class="col-md-12 col-lg-4">
-        <p>email</p>
-    </div>
+<div class="col-md-6 col-lg-4 contact-us">
+  <p><i class="fa-solid fa-square-phone"></i>&nbsp;0211 342 3542</p>
+  <p><i class="fa-solid fa-envelope"></i>&nbsp;info@urbanmemes.co.uk</p>
 </div>
-
+</div>
 </div>
 </footer>
 
