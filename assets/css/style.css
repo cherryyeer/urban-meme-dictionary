@@ -152,6 +152,7 @@ p {
 .gif {
   align-items: center;
   text-align: center;
+  margin-bottom: 35px;
 }
 .display-content {
   text-align: center;
@@ -231,7 +232,7 @@ footer {
 }
 #results h5 {
   font-weight: 700;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
 }
 
 .card-content p {
@@ -251,13 +252,14 @@ footer {
 
 .results-meme h2 {
   font-size: 45px;
-  color: white;
+  color: #333;
 }
 
 .results-meme {
+  display: none;
   text-align: center;
   padding-bottom: 2%;
-  padding-top: 4%;
+  padding-top: 2%;
 }
 
 .back-button {
@@ -306,7 +308,7 @@ footer {
     padding-bottom: 3%;
   }
 
-  .words-content p {
+  /* .words-content p {} */
 
   .results-meme p {
 
@@ -333,10 +335,6 @@ footer {
   padding-left: 5%; 
   
   }
-
-
-
-
 }
 
 /* Mobile */
