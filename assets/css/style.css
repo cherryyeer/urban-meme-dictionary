@@ -1,12 +1,12 @@
 /* Nav bar */
 .navbar {
   position: absolute;
-  background-color: black;
+  background-color: #fff;
   opacity: 0.9;
 }
 
 .navbar a {
-  color: white;
+  color: inherit;
 }
 
 .navbar-brand {
@@ -16,7 +16,6 @@
 #navbarNav {
   padding-right: 2%;
 }
-
 /* Jumbotron */
 
 .jumbotron {
@@ -33,12 +32,7 @@
 p {
   color: white;
   text-align: center;
-
-
- 
-  
 }
-
 
 .d-flex {
   padding-top: 2%;
@@ -87,7 +81,6 @@ p {
 
 .card-body p {
   color: black;
-  
 }
 
 .card {
@@ -141,6 +134,35 @@ p {
   padding-top: 2%;
   text-align: justify;
 }
+ 
+/* Display GIFS */
+.display-content h2 {
+  text-align: center;
+
+}
+
+.p-meme {
+  text-align: center;
+  color: black;
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+.gif {
+  align-items: center;
+  text-align: center;
+}
+.display-content {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+#display-gifs {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
 
 /* Footer */
 
@@ -153,97 +175,165 @@ footer {
 
 .socials {
   display: inline-flex;
+  justify-content: space-evenly;
 }
 
-.socials p {
+.socials a {
+  font-size: 30px;
   padding: 2%;
 }
 
 .contact-us i {
   padding-right: 2%;
- 
 }
 .slogan {
   font-style: italic;
 }
 
 .contact-us {
-    display: flex;
-   flex-direction: column;
-   text-align: left;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 /* Results page */
 #results {
-    background-color: black;
-    padding: 5%;
-    padding-left: 20%;
-    padding-right: 20%;
-    
+  background-color: black;
+  padding: 5%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .results-content {
-    text-align: center;
-    padding-bottom: 4%;
-} 
-  
-  .results-content p {
-    color: white;
-    font-size: 15px;
-  }
-  
-  .results-content h2 {
-    font-size: 45px;
-    color: white;
-  }
-  
-  .card-body p {
-    color: black;
-    
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 18rem;
-  }
-  #results h5 {
-    font-weight: 700;
-    padding-bottom: 2%;
-  }
-  
-  .card-content p {
-    text-align: justify;
-  }
-  
-  .author-results {
-    font-weight: 600;
-    font-style: italic;
-  }
+  text-align: center;
+  padding-bottom: 4%;
+}
 
+.results-content p {
+  color: white;
+  font-size: 15px;
+}
 
-  .results-meme p {
-    color: white;
-    font-size: 15px;
-    text-align: center;
-  }
+.results-content h2 {
+  font-size: 45px;
+  color: white;
+}
 
-  
-  .results-meme h2 {
-    font-size: 45px;
-    color: white;
-  }
+.card-body p {
+  color: black;
+}
 
-  .results-meme {
-    text-align: center;
-    padding-bottom: 2%;
-    padding-top: 4%;
-  }
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 18rem;
+}
+#results h5 {
+  font-weight: 700;
+  padding-bottom: 2%;
+}
+
+.card-content p {
+  text-align: justify;
+}
+
+.author-results {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.results-meme p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.results-meme h2 {
+  font-size: 45px;
+  color: white;
+}
+
+.results-meme {
+  text-align: center;
+  padding-bottom: 2%;
+  padding-top: 4%;
+}
 
 .back-button {
-    background-color: black;
-   text-align: center;
-   padding-bottom: 4%;
+  background-color: black;
+  text-align: center;
+  padding-bottom: 4%;
 }
+
+
+
+
+
+/* Responsive */
+/* Tablet */
+
+@media only screen and (max-width: 1180px) {
+
+  .jumbotron {
+    background: url("../images/background-image.jpg");
+    height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 17%;
+    opacity: 0.9;
+  }
+
+  .jumbotron p {
+    margin: 5%;
+  }
+
+  .display-4 {
+    padding-top: 15%;
+  }
+
+  .memes-content p {
+    color: black;
+    font-size: 15px;
+  }
   
+  .memes-content h2 {
+    font-size: 35px;
+  }
+  
+  .card-meme {
+    padding-bottom: 3%;
+  }
+
+  .words-content p {
+    color: white;
+    font-size: 15px;
+  }
+  
+  .words-content h2 {
+    font-size: 35px;
+    color: white;
+  }
+
+  .about-image {
+    display: none;
+  }
+  .about-content h2 {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .about-content p {
+  padding-right: 5%;  
+  padding-left: 5%; 
+  
+  }
+
+
+
+
+}
+
+/* Mobile */

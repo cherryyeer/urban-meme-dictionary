@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Urban Meme Dictionary</title>
 
 <!-- CSS -->
@@ -18,41 +19,47 @@
 
 <body>
     <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg ">
-       
-          <a class="navbar-brand" href="#jumbotron">Urban Meme Dictionary</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon burger-menu"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg fixed-top">
+       <div class="container-fluid">
+        <a class="navbar-brand" href="#jumbotron">Urban Meme Dictionary</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon burger-menu"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#jumbotron">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link contact-link" href="#footer">Contact Us</a>
-              </li>              
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#jumbotron">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contact-link nav-pills" href="#footer">Contact Us</a>
+            </li>              
+          </ul>
+        </div>
+       </div>
         
       </nav>
 
       <!-- Jumbotron  -->
-
+<section
+id="jumbotron">
       <div class="jumbotron">
         <h1 class="display-4">Slang Collector</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> 
                        
-        <form class="d-flex justify-content-center align-items-center container" role="search">
-            <input class="form-control me-2" type="search" placeholder="add your unknown slang" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
+        <form action="results.html" class="d-flex justify-content-center align-items-center container" role="search">
+            <div class="form-group">
+              <div class="input-group">
+                <input id="search-query"class="form-control me-2 search-query" type="search" placeholder="word" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit" id="search-button">Search</button>
+              </div>
+            </div>
           </form>
       </div>
-
+    </section>
 <!-- Memes Section -->
 <section id="memes">
 <div class="memes-content">
@@ -64,24 +71,25 @@
     <div class="row">
 
 
-  <div class="col-sm-4">
+  <div class="col-sm-4 col-md-12 col-lg-4 card-meme">
   <div class="card" >
     <img src="assets/images/card-2.gif" class="card-img-top" alt="...">    
   </div>
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-4 col-md-12 col-lg-4 card-meme">
   <div class="card" >
       <img src="assets/images/card-1.webp" class="card-img-top" alt="...">    
     </div>
   </div>
 
-  <div class="col-sm-4">
+  <div class="col-sm-4 col-md-12 col-lg-4 card-meme">
   <div class="card">
     <img src="assets/images/card-3.webp" class="card-img-top" alt="...">    
   </div>
 </div>
-</div></section>
+</div>
+</section>
 
 
 <!-- Slang words section -->
@@ -152,24 +160,36 @@
 </div>
 </section>
 
+
+
+
+<!-- Display GIFS section -->
+
+<section id="display-gifs">
+  <h2>GIFS Results</h2>
+ <input id="search" class="form-control-sm mr-sm-2" type="text" placeholder="Search for gifs">
+<button class="btn btn-outline-dark my-2 my-sm-0" id="searchgifs" type="submit">Search</button>
+</section>
+
+
 <!-- Footer -->
 <footer id="footer">
 <div class="container-fluid">
 
   <!-- Follow us links -->
 <div class="row">
-<div class="col-md-6 col-lg-4 socials">
-  <p><i class="fa-brands fa-instagram"></i></p>
-  <p><i class="fa-brands fa-twitter"></i></p>
-  <p><i class="fa-brands fa-facebook"></i></p>
+<div class="col-sm-4 col-md-4  col-lg-4 socials">
+  <a href="instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+  <a href="twitter.com"><p><i class="fa-brands fa-square-twitter"></i></p></a>
+  <a href="facebook.com"><p><i class="fa-brands fa-square-facebook"></i></p></a>
 </div>
 <!-- Copyright -->
-<div class="col-md-6 col-lg-4 copyright">
+<div class="col-sm-4 col-md-4  col-lg-4 copyright">
   <p class="slogan">Where the streets meet the internet</p>
-  <p>Copyright</p>
+  <p>&copy; The Hobbits 2023</p>
 </div>
 <!-- contact -->
-<div class="col-md-6 col-lg-4 contact-us">
+<div class="col-sm-4 col-md-4 col-lg-4 contact-us">
   <p><i class="fa-solid fa-square-phone"></i>&nbsp;0211 342 3542</p>
   <p><i class="fa-solid fa-envelope"></i>&nbsp;info@urbanmemes.co.uk</p>
 </div>
@@ -177,8 +197,13 @@
 </div>
 </footer>
 
+<!-- Jquery  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-</body>
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+<!-- Javascript file -->
+<script src="assets/js/script.js"></script>
+</body>
 </html>
