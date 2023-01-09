@@ -46,3 +46,5 @@ $("#searchgifs").on("click", function () {
     }
   );
 });
+// $("#search-button").on("click", pageRedirect);
+
