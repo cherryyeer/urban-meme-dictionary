@@ -44,7 +44,8 @@
       </nav>
 
       <!-- Jumbotron  -->
-
+<section
+id="jumbotron">
       <div class="jumbotron">
         <h1 class="display-4">Slang Collector</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> 
@@ -52,13 +53,17 @@
         <form action="results.html" class="d-flex justify-content-center align-items-center container" role="search">
             <div class="form-group">
               <div class="input-group">
+
+                <input id="search-query"class="form-control me-2 search-query" type="search" placeholder="word" aria-label="Search">
+
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
                 <button class="btn btn-outline-light" type="submit" id="search-button">Search</button>
               </div>
             </div>
           </form>
       </div>
-
+    </section>
 <!-- Memes Section -->
 <section id="memes">
 <div class="memes-content">
@@ -70,19 +75,19 @@
     <div class="row">
 
 
-  <div class="col-sm-4">
+  <div class="col-sm-4 col-md-12 col-lg-4 card-meme">
   <div class="card" >
     <img src="assets/images/card-2.gif" class="card-img-top" alt="...">    
   </div>
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-4 col-md-12 col-lg-4 card-meme">
   <div class="card" >
       <img src="assets/images/card-1.webp" class="card-img-top" alt="...">    
     </div>
   </div>
 
-  <div class="col-sm-4">
+  <div class="col-sm-4 col-md-12 col-lg-4 card-meme">
   <div class="card">
     <img src="assets/images/card-3.webp" class="card-img-top" alt="...">    
   </div>
@@ -159,6 +164,18 @@
 </div>
 </section>
 
+
+
+
+<!-- Display GIFS section -->
+
+<section id="display-gifs">
+  <h2>GIFS Results</h2>
+ <input id="search" class="form-control-sm mr-sm-2" type="text" placeholder="Search for gifs">
+<button class="btn btn-outline-dark my-2 my-sm-0" id="searchgifs" type="submit">Search</button>
+</section>
+
+
 <!-- Footer -->
 <footer id="footer">
 <div class="container-fluid">
@@ -184,6 +201,17 @@
 </div>
 </footer>
 
+
+<!-- Jquery  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<!-- Javascript file -->
+<script src="assets/js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>
