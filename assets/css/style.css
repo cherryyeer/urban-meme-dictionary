@@ -1,8 +1,7 @@
-
 /* Fonts */
 head,
 body {
-  font-family: 'Space Mono', monospace !important;
+  font-family: "Space Mono", monospace !important;
 }
 
 .navbar,
@@ -10,10 +9,9 @@ h1,
 h2 {
   font-weight: bold !important;
 }
-  
+
 .nav-link {
   color: black;
-  /* border: 2px solid #333; */
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -53,6 +51,7 @@ h2 {
 #navbarNav {
   padding-right: 2%;
 }
+
 /* Jumbotron */
 
 .jumbotron {
@@ -61,7 +60,7 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 17%;
+  padding-top: 20%;
   opacity: 0.9;
 }
 
@@ -140,6 +139,13 @@ p {
   font-style: italic;
 }
 
+/* Recently Viewed */
+
+#recently-viewed {
+  text-align: center;
+  padding-top: 2%;
+}
+
 /* About Us Section */
 
 #about {
@@ -149,16 +155,13 @@ p {
 }
 
 #about img {
-  width: 80%;
+  width: 85%;
 }
 
 .image-col {
   background-color: black;
   opacity: 0.9;
-  padding: 0;
-}
-.row {
-  padding-left: 0 !important;
+  padding-left: 0;
 }
 
 .about-content h2 {
@@ -180,19 +183,19 @@ p {
 .results-gifs {
   display: none;
   background-color: #181818;
-  margin: 50px;
+  margin: 50px 300px 50px 300px;
 }
 
 .results-words {
   background-color: #181818;
-  margin: 50px;
+  margin: 50px 300px 50px 300px;
 }
 
 .results-words h2 {
   color: white;
-  padding-left: 10%;
-  padding: 4%;
+  padding: 4% 4% 4% 15%;
   font-weight: 600;
+  text-align: left;
 }
 
 .results-words p {
@@ -217,6 +220,11 @@ p {
   padding-bottom: 5%;
 }
 
+.return {
+  text-align: center;
+  padding-bottom: 3%;
+}
+
 /* Footer */
 
 footer {
@@ -228,7 +236,7 @@ footer {
 
 .socials {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .socials a {
@@ -255,28 +263,36 @@ footer {
   justify-content: flex-start;
 }
 
+.contact-us a:hover {
+  color: #333;
+}
+
+.contact-us a {
+  color: white;
+  text-decoration: none;
+}
 
 /* Tablet */
-@media only screen and (max-width: 1180px){
-	.jumbotron {
+@media only screen and (max-width: 1180px) {
+  .jumbotron {
     height: 500px;
   }
 
   socials {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
   }
 }
 
 /* Mobile */
 
 @media only screen and (max-width: 500px) {
-	.jumbotron {
+  .jumbotron {
     height: 500px;
   }
 
   .socials {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
   }
 }

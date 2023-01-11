@@ -124,4 +124,30 @@ $("#search-button").on("click", function (event) {
     
   renderGif(wordSearch);
   wordDefinition(wordSearch);
+  renderHistory($(this).text());
   });
+
+
+  $("#return-button").on("click", function (event) {
+    event.preventDefault(); 
+    $("#result").hide();
+    $(".return").hide();
+    
+  
+    $("#memes").show();
+    $("#words").show();
+    $("#about").show();
+    $(".results-gifs").hide(); 
+
+  
+  });
+
+   function renderHistory(btn) {
+    // Looping through the array of stored history
+    var gifsHistory = $("<button>");
+    gifsHistory.addClass("btn btn-dark btn-block");   
+    gifsHistory.text(btn);
+    $("#recently-viewed").append(gifsHistory);
+  }
+
+
