@@ -1,3 +1,4 @@
+
 /* Fonts */
 head,
 body {
@@ -8,6 +9,9 @@ body {
 h1,
 h2 {
   font-weight: bold !important;
+  
+a:hover {
+  background-color: yellow;
 }
 
 /* Nav bar */
@@ -130,6 +134,10 @@ p {
 .image-col {
   background-color: black;
   opacity: 0.9;
+  padding: 0;
+}
+.row {
+  padding-left: 0;important:  !important;
 }
 
 .about-content h2 {
@@ -146,36 +154,41 @@ p {
   padding-top: 2%;
   text-align: justify;
 }
- 
-/* Display GIFS */
-.display-content h2 {
-  text-align: center;
 
+/* results section INDEX*/
+#result {
+  background-color: #181818;
+  margin: 3% 30% 3% 30%;
 }
 
-.p-meme {
-  text-align: center;
-  color: black;
-  padding-left: 20%;
-  padding-right: 20%;
-
+.results-words h2 {
+  color: white;
+  padding-left: 10%;
+  padding: 4%;
+  font-weight: 600;
 }
 
-.gif {
-  align-items: center;
+.results-words p {
+  color: white;
   text-align: center;
+  padding-bottom: 10%;
+  text-align: justify;
+  padding-left: 15%;
+  padding-right: 15%;
   margin-bottom: 35px;
 }
-.display-content {
+
+.results-gifs h2 {
+  color: white;
   text-align: center;
-  padding-bottom: 2%;
+  padding: 4%;
+  font-weight: 600;
 }
 
-#display-gifs {
+#meme-display {
   text-align: center;
   padding-bottom: 5%;
 }
-
 
 /* Footer */
 
@@ -188,12 +201,18 @@ footer {
 
 .socials {
   display: inline-flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  
+  
 }
+
+
 
 .socials a {
   font-size: 30px;
-  padding: 2%;
+  margin-left: 5%;
+  text-decoration: none;
+  color: white;
 }
 
 .contact-us i {
@@ -206,7 +225,7 @@ footer {
 .contact-us {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  justify-content: flex-start;
 }
 
 /* Results page */
@@ -280,15 +299,10 @@ footer {
   padding-bottom: 4%;
 }
 
-
-
-
-
 /* Responsive */
 /* Tablet */
 
 @media only screen and (max-width: 1180px) {
-
   .jumbotron {
     background: url("../images/background-image.jpg");
     height: 850px;
@@ -311,11 +325,11 @@ footer {
     color: black;
     font-size: 15px;
   }
-  
+
   .memes-content h2 {
     font-size: 35px;
   }
-  
+
   .card-meme {
     padding-bottom: 3%;
   }
@@ -327,7 +341,7 @@ footer {
     color: white;
     font-size: 15px;
   }
-  
+
   .words-content h2 {
     font-size: 35px;
     color: white;
@@ -343,9 +357,8 @@ footer {
   }
 
   .about-content p {
-  padding-right: 5%;  
-  padding-left: 5%; 
-  
+    padding-right: 5%;
+    padding-left: 5%;
   }
 }
 

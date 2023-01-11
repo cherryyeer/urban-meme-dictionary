@@ -26,6 +26,7 @@ function renderGif(wordSearch) {
 $("#search-button").on("click", function (event) {
     event.preventDefault();
     $("#meme-display").empty();
+    $("#words-display").empty();
     
     // Getting the value in
     var wordSearch = $("#search-query").val().trim();
@@ -36,6 +37,36 @@ $("#search-button").on("click", function (event) {
     $("#memes").hide();
     $("#words").hide();
     $("#about").hide();
+    $(".results-gifs").show();
+    $('html,body').animate({scrollTop: $("#result").offset().top},'slow');
+    
+
+  renderGif(wordSearch);
+  wordDefinition(wordSearch)
+  });
+
+  //   URBAN Dictionary API
+
+function wordDefinition(wordSearch) {
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=" + wordSearch,
+        "method": "GET",
+        "headers": {
+            "X-RapidAPI-Key": "27c8768c7emshe8136aa61c03913p161fefjsn21fb5db4ef80",
+            "X-RapidAPI-Host": "mashape-community-urban-dictionary.p.rapidapi.com"
+        }
+    };
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+        var definition = response.list[0].definition;
+            var wordParagraph = $("<p>").text(definition);
+            $("#words-display").append(wordParagraph);
+            var searchedWord = $("<h2>").text(wordSearch);
+            $("#searched-word").append(searchedWord);
+    });
+}
     $(".results-meme").show();
     $('html,body').animate({scrollTop: $("#result").offset().top},'slow');
     
