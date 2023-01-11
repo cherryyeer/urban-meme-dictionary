@@ -1,3 +1,15 @@
+
+/* Fonts */
+head,
+body {
+  font-family: 'Space Mono', monospace !important;
+}
+
+.navbar,
+h1,
+h2 {
+  font-weight: bold !important;
+  
 a:hover {
   background-color: yellow;
 }
