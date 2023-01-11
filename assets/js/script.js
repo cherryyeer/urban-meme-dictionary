@@ -67,3 +67,9 @@ function wordDefinition(wordSearch) {
             $("#searched-word").append(searchedWord);
     });
 }
+    $(".results-meme").show();
+    $('html,body').animate({scrollTop: $("#result").offset().top},'slow');
+    
+  console.log("amen");
+  renderGif(wordSearch);
+  });
