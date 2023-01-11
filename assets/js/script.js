@@ -66,5 +66,31 @@ $("#search-button").on("click", function (event) {
     $('html,body').animate({scrollTop: $("#result").offset().top}, 500);
     
   renderGif(wordSearch);
-  wordDefinition(wordSearch)
+  wordDefinition(wordSearch);
+  renderHistory($(this).text());
   });
+
+
+  $("#return-button").on("click", function (event) {
+    event.preventDefault(); 
+    $("#result").hide();
+    $(".return").hide();
+    
+  
+    $("#memes").show();
+    $("#words").show();
+    $("#about").show();
+    $(".results-gifs").hide(); 
+
+  
+  });
+
+   function renderHistory(btn) {
+    // Looping through the array of stored history
+    var gifsHistory = $("<button>");
+    gifsHistory.addClass("btn btn-dark btn-block");   
+    gifsHistory.text(btn);
+    $("#recently-viewed").append(gifsHistory);
+  }
+
+
