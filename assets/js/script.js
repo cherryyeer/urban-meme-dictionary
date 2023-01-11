@@ -14,7 +14,7 @@ function renderGif(wordSearch) {
     for (var i = 0; i < giffy.length; i++) {
 
         var gifPoster = $('<img>').attr('src', giffy[i].images.downsized_large.url);
-        gifPoster.addClass(".gif");
+        gifPoster.addClass("img-fluid gif");
         $('#meme-display').append(gifPoster);
     };
 
@@ -22,32 +22,9 @@ function renderGif(wordSearch) {
 
 };
 
+ //   URBAN Dictionary API
 
-$("#search-button").on("click", function (event) {
-    event.preventDefault();
-    $("#meme-display").empty();
-    $("#words-display").empty();
-    
-    // Getting the value in
-    var wordSearch = $("#search-query").val().trim();
-  
-    // Empty input field
-    $("#search-query").val("");
-    
-    $("#memes").hide();
-    $("#words").hide();
-    $("#about").hide();
-    $(".results-gifs").show();
-    $('html,body').animate({scrollTop: $("#result").offset().top},'slow');
-    
-
-  renderGif(wordSearch);
-  wordDefinition(wordSearch)
-  });
-
-  //   URBAN Dictionary API
-
-function wordDefinition(wordSearch) {
+ function wordDefinition(wordSearch) {
     var settings = {
         "async": true,
         "crossDomain": true,
@@ -67,9 +44,27 @@ function wordDefinition(wordSearch) {
             $("#searched-word").append(searchedWord);
     });
 }
-    $(".results-meme").show();
-    $('html,body').animate({scrollTop: $("#result").offset().top},'slow');
+
+
+$("#search-button").on("click", function (event) {
+    event.preventDefault();
+    $("#meme-display").empty();
+    $("#words-display").empty();
+    $("#searched-word").empty();
+
     
-  console.log("amen");
+    // Getting the value in
+    var wordSearch = $("#search-query").val().trim();
+  
+    // Empty input field
+    $("#search-query").val("");
+    
+    $("#memes").hide();
+    $("#words").hide();
+    $("#about").hide();
+    $(".results-gifs").show();
+    $('html,body').animate({scrollTop: $("#result").offset().top}, 500);
+    
   renderGif(wordSearch);
+  wordDefinition(wordSearch)
   });
