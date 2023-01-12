@@ -32,8 +32,6 @@ Here is the live URL: https://cherryyeer.github.io/urban-meme-dictionary/
 ![screenshot](./assets/images/Screenshots/search-page-2.png)
 ![screenshot](./assets/images/Screenshots/search-page.png)
 
-Here is the live URL: https://cherryyeer.github.io/urban-meme-dictionary/
-
 # Contact
 ## Collaborators
 
