@@ -19,6 +19,7 @@ h2 {
 }
 
 .history-btn {
+  /* width: 100px; */
   background-color: #333 !important;
   color: #fff !important;
   border: 2px solid #333;
@@ -183,12 +184,12 @@ p {
 .results-gifs {
   display: none;
   background-color: #181818;
-  margin: 50px 300px 50px 300px;
+  margin: 100px;
 }
 
 .results-words {
   background-color: #181818;
-  margin: 50px 300px 50px 300px;
+  margin: 100px;  
 }
 
 .results-words h2 {
@@ -278,7 +279,7 @@ footer {
     height: 500px;
   }
 
-  socials {
+  .socials {
     display: flex;
     justify-content: center;
   }

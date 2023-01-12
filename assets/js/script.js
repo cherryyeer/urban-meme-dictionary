@@ -1,10 +1,13 @@
 console.log("hello world");
 
 // Gets previous searches from local storage
-var storedHistory = JSON.parse(localStorage.getItem("storedHistory")) || [];
+// var storedHistory = JSON.parse(localStorage.getItem("storedHistory")) || [];
+var storedHistory = [];
 
-if (storedHistory.length > 0) {
-  wordDefinition(storedHistory[storedHistory.length - 1]);
+var storedTodos = JSON.parse(localStorage.getItem("storedHistory"));
+
+if (storedTodos !== null) {
+  storedHistory = storedTodos;
 }
 
 for (var i = 0; i < storedHistory.length; i++) {
@@ -21,9 +24,8 @@ var h4El = $("<h4>").text("Recent Searched Words");
 
 function wordHistory(btn) {
     
-
     var wordBtn = $("<button>");
-    wordBtn.addClass("btn btn-sm history-btn");
+    wordBtn.addClass("btn btn-dark history-btn");
     wordBtn.text(btn);
     $("#history").append(wordBtn);
 }
@@ -76,7 +78,6 @@ function renderGif(wordSearch) {
     };
 
 });
-fetch(queryURL);
 };
 
  //   URBAN Dictionary API
@@ -97,6 +98,7 @@ fetch(queryURL);
         var definition = response.list[0].definition;
             var wordParagraph = $("<p>").text(definition);
             $("#words-display").append(wordParagraph);
+
             var searchedWord = $("<h2>").text(wordSearch);
             $("#searched-word").append(searchedWord);
     });
@@ -124,7 +126,6 @@ $("#search-button").on("click", function (event) {
     
   renderGif(wordSearch);
   wordDefinition(wordSearch);
-  renderHistory($(this).text());
   });
 
 
@@ -138,16 +139,8 @@ $("#search-button").on("click", function (event) {
     $("#words").show();
     $("#about").show();
     $(".results-gifs").hide(); 
-
-  
   });
 
-   function renderHistory(btn) {
-    // Looping through the array of stored history
-    var gifsHistory = $("<button>");
-    gifsHistory.addClass("btn btn-dark btn-block");   
-    gifsHistory.text(btn);
-    $("#recently-viewed").append(gifsHistory);
-  }
+  
 
 
