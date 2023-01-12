@@ -15,11 +15,22 @@ Gif Dictionary is a web application that allows users to browse through gifs and
 - How to properly handle API errors and exceptions
 - How to use CSS to style and improve the overall user experience of the application.
 
-## Appliocation details
+## Usage
 
-Here is the live URL: 
+User would be able to search for slang and trending GIFs, and see their corresponding definition so they can easily understand the meaning and context of the GIF and share it with their friends.
 
-Here is a gif of the application:
+## Application details
+
+Here is the live URL: https://cherryyeer.github.io/urban-meme-dictionary/
+
+## Screenshot
+
+![screenshot](./assets/images/Screenshots/home-page.png)
+![screenshot](./assets/images/Screenshots/home-page-2.png)
+![screenshot](./assets/images/Screenshots/home-page-3.png)
+![screenshot](./assets/images/Screenshots/home-page-4.png)
+![screenshot](./assets/images/Screenshots/search-page-2.png)
+![screenshot](./assets/images/Screenshots/search-page.png)
 
 # Contact
 ## Collaborators
@@ -32,9 +43,9 @@ Alina Tudor
 
 Samuel Oluyomi
 
-- Github: [GitHub]()
-- Email: 
-- Linkedin: [LinkedIn Profile]()
+- Github: [GitHub](https://github.com/hollusam)
+- Email: oluyomisamuels@gmail.com
+- Linkedin: [LinkedIn Profile](https://www.linkedin.com/in/oluyomi-samuel)
 
 Yu Chen
 - Github: [GitHub]()
