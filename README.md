@@ -1,7 +1,7 @@
 # Urban Meme Dictionary
 
 ## Description
-Gif Dictionary is a web application that allows users to browse through gifs and see their corresponding definition on Urban Dictionary. The application makes it easy for users to understand the meaning and context of the gifs and share them with their friends.
+Urban Meme Dictionary is a web application that allows users to browse through gifs and see their corresponding definition on Urban Dictionary. The application makes it easy for users to understand the meaning and context of the gifs and share them with their friends.
 
 ## Challenges
 - Retrieving gifs and their corresponding definitions from Urban Dictionary API
@@ -31,6 +31,8 @@ Here is the live URL: https://cherryyeer.github.io/urban-meme-dictionary/
 ![screenshot](./assets/images/Screenshots/home-page-4.png)
 ![screenshot](./assets/images/Screenshots/search-page-2.png)
 ![screenshot](./assets/images/Screenshots/search-page.png)
+
+Here is the live URL: https://cherryyeer.github.io/urban-meme-dictionary/
 
 # Contact
 ## Collaborators
