@@ -18,9 +18,9 @@ for (var i = 0; i < storedHistory.length; i++) {
 
 // Creating header
 var h4El = $("<h4>").text("Recent Searched Words");
-    h4El.css("display", "none");
+    // h4El.css("display", "none");
     h4El.addClass("header-history");
-    $("#history").append(h4El);
+    $("#history-head").append(h4El);
 
 function wordHistory(btn) {
     

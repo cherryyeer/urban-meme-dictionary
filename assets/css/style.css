@@ -29,6 +29,11 @@ h2 {
   margin: 10px 20px;
 }
 
+.header-history {
+  text-align: center;
+  margin-top: 15px;
+}
+
 .nav-link:hover {
   background-color: #333;
   color: #fff !important;
