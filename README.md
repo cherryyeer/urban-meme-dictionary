@@ -1,7 +1,13 @@
 # Urban Meme Dictionary
 
 ## Description
-Gif Dictionary is a web application that allows users to browse through gifs and see their corresponding definition on Urban Dictionary. The application makes it easy for users to understand the meaning and context of the gifs and share them with their friends.
+Urban Meme Dictionary is a web application that allows users to browse through gifs and see their corresponding definition on Urban Dictionary. The application makes it easy for users to understand the meaning and context of the gifs and share them with their friends.
+
+## Contents
+* [Challenges](#challenges)
+* [Things Learned](#things-learned)
+* [Application Details](#appliocation-details)
+* [Collaborators](#collaborators)
 
 ## Challenges
 - Retrieving gifs and their corresponding definitions from Urban Dictionary API
@@ -24,13 +30,16 @@ User would be able to search for slang and trending GIFs, and see their correspo
 Here is the live URL: https://cherryyeer.github.io/urban-meme-dictionary/
 
 ## Screenshot
-
+- Home Page
 ![screenshot](./assets/images/Screenshots/home-page.png)
 ![screenshot](./assets/images/Screenshots/home-page-2.png)
 ![screenshot](./assets/images/Screenshots/home-page-3.png)
 ![screenshot](./assets/images/Screenshots/home-page-4.png)
-![screenshot](./assets/images/Screenshots/search-page-2.png)
+
+- Search Result
 ![screenshot](./assets/images/Screenshots/search-page.png)
+![screenshot](./assets/images/Screenshots/search-page-2.png)
+
 
 # Contact
 ## Collaborators
@@ -48,6 +57,6 @@ Samuel Oluyomi
 - Linkedin: [LinkedIn Profile](https://www.linkedin.com/in/oluyomi-samuel)
 
 Yu Chen
-- Github: [GitHub]()
-- Email: 
-- Linkedin: [LinkedIn Profile]()
+- Github: [GitHub](https://github.com/cherryyeer)
+- Email: yuchenwork57@gmail.com
+- Linkedin: [LinkedIn Profile](https://www.linkedin.com/in/yu-c-a281341a0/)
